@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>ارسال تیکت</title>
+    <title>مدیریت سوالات متداول</title>
     <!-- Favicon-->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!-- Plugins Core Css -->
@@ -32,23 +32,23 @@
     <div class="overlay"></div>
     <!-- #END# Overlay For Sidebars -->
     <!-- Top Bar -->
+
     <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a href="#" onClick="return false;" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
                     aria-expanded="false"></a>
-                <a href="#" onClick="return false;" class="bars"></a>
-                
+                <a href="#" onClick="return false;" class="bars"></a>      
                     
                     <!-- <span class="logo-name">پنل ادمین آرین تل</span> -->
                     <img src="assets/images/logo-footer.png " alt="profile" style="width:120px">
                 
-            </div>
+                </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav navbar-center">
+                <ul class="nav navbar-nav navbar-left">
                     <li>
                         <a href="#" onClick="return false;" class="sidemenu-collapse">
-                            <i class="nav-hdr-btn ti-align-center"></i>
+                            <i class="nav-hdr-btn ti-align-left"></i>
                         </a>
                     </li>
                 </ul>
@@ -351,85 +351,171 @@
                     </li>
         </aside>
     </div>
+        
+        <!-- #END# Right Sidebar -->
+    </div>
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
                 <div class="row">
-                    
+                   
                 </div>
             </div>
-            <!-- Widgets -->
-           
 
+      
 
-
-
-           
-
-
-    <div class="row clearfix">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="card">
-                <div class="header">
-                    <h2>
-                        <strong>تیکت های ارسالی</strong></h2>
-                    <ul class="header-dropdown m-r--5">
-                        
+            <div class="col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="profile-tab-box">
+                        <div class="p-l-20">
+                            <ul class="nav ">
+                                <li class="nav-item tab-all">
+                                    <a class="nav-link active show" href="#project" data-toggle="tab">زبان فارسی</a>
+                                </li>
+                                <li class="nav-item tab-all p-l-20">
+                                    <a class="nav-link" href="#usersettings" data-toggle="tab">زبان انگلیسی</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="body">
-                    <div class="table-responsive">
-                        <table id="tableExport" class="display table table-hover table-checkable order-column m-t-20 width-per-100">
-                            <thead>
-                                <tr>
-                                    <th>موضوع تیکت</th>
-                                    <th>اولویت تیکت</th>
-                                    <th>پیوست</th>
-                                    <th>وضعیت</th>
-                                    <th>پاسخ به تیکت</th>
-                                    
-                                   
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>فوتر سایت</td>
-                                    <td>بالا</td>
-                                    <td>دارد</td>
-                                    <td>فعال</td>
-                                    <td><a href="./send-tickets.html"><i class="fas fa-reply" style="color:black;text-align: center;"></i></a></td>
-                                    
-                                </tr>
-                                <tr>
-                                    <td>آیکون سایت</td>
-                                    <td>متوسط</td>
-                                    <td>ندارد</td>
-                                    <td>غیر فعال</td>
-                                    <td><a href="./send-tickets.html"><i class="fas fa-reply" style="color:black;text-align: center;"></i></a></td>
-                                    
-                                </tr>
-                                <tr>
-                                    <td>هدر سایت</td>
-                                    <td>متوسط</td>
-                                    <td>دارد</td>
-                                    <td>فعال</td>
-                                    <td><a href="./send-tickets.html"><i class="fas fa-reply" style="color:black;text-align: center;"></i></a></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="project" aria-expanded="true">
+                        <div class="row clearfix">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="card project_widget">
+                                    <div class="header">
+
+                                        <h4>مدیریت سوالات متداول</h4><br /><br />
+                                        <form action="#">
+                                            <div class="form-group">
+
+                                                <label for="exampleFormControlInput1">تیتر </label>
+                                                <input type="text" class="form-control" name="Title"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="تیتر متن خود را بنویسید">
+                                            </div>
+
+                                            
+
+                                           
+
+                                            <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">توضیحات</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                    rows="3"></textarea>
+                                            </div>
+
+                                            <label>آپلود عکس  </label><br/>
+            
+                                            <div class="input-group mb-3">
+                                              <div class="custom-file">
+                                                <input type="file" name="file-input" class="custom-file-input" id="inputGroupFile02">
+                                                <label class="custom-file-label" for="inputGroupFile02" style="text-align:center"></label>
+                                              </div>
+                                            </div><br>
+
+                                            <div class="form-check m-l-10">
+                                                <label class="form-check-label"> 
+                                                    <p>وضعیت نمایش</p>
+                                                    <input class="form-check-input" type="checkbox" value=""> 
+                                                    <span class="form-check-sign">
+                                                        <span class="check"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            
+
+                                            <button class="btn btn-info btn-round">ذخیره تغییرات</button>
+                                            </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 
+                               *******div زیر یک باکس خالی و ثابت می باشد*******      -->
+
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div role="tabpanel" class="tab-pane" id="timeline" aria-expanded="false">
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="usersettings" aria-expanded="false">
+
+
+                        <div class="card">
+                            <div class="header">
+                                <h2><b>Manage Q&A</b></h2>
+                            </div>
+                            <div class="body">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="Title" placeholder="Title">
+                                </div>
+                                
+
+                              
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">description</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+
+
+                                <label>upload file</label><br/>
+            
+                                <div class="input-group mb-3">
+                                  <div class="custom-file">
+                                    <input type="file" name="file-input" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" style="text-align:center"></label>
+                                  </div>
+                                </div><br>
+                   
+
+                                <div class="form-check m-l-10">
+                                    <label class="form-check-label"> 
+                                        <p>Show Item</p>
+                                        <input class="form-check-input" type="checkbox" value=""> 
+                                        <span class="form-check-sign">
+                                            <span class="check"></span>
+                                        </span>
+                                    </label>
+                                </div>
+
+
+                                <button class="btn btn-info btn-round">save</button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- #END# Exportable Table -->
-</div>
-</section>
+        </div>
+        </div>
+    </section>
 
-    <!-- Plugins Js -->
+
+
+                
+
     <script src="assets/js/app.min.js"></script>
     <script src="assets/js/chart.min.js"></script>
+    <script src="../../assets/js/bundles/tinymce/tinymce.min.js"></script>
+    <script src="../../assets/js/bundles/ckeditor/ckeditor.js"></script>
     <!-- Custom Js -->
     <script src="assets/js/admin.js"></script>
     <script src="assets/js/bundles/apexcharts/apexcharts.min.js"></script>
     <script src="assets/js/pages/index.js"></script>
+    <script src="../../assets/js/pages/forms/editors.js"></script>
 </body>

@@ -233,18 +233,12 @@
                         
                     </li>
 
-                    <li>
-                        <a href="../rtldark/News-Managment.html" onClick="" class="">
-                            <i class="far fa-newspaper"></i>
-                            <span>مدیریت اخبار</span>
-                        </a>
-                       
-                    </li>
+            
 
                     <li>
                         <a href="#" onClick="return false;" class="menu-toggle">
                             <i class="menu-icon ti-shopping-cart-full"></i>
-                            <span>مدیریت محصولات</span>
+                            <span>مدیریت سیم کارت ها</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
@@ -257,11 +251,14 @@
                     <li>
                         <a href="#" onClick="return false;" class="menu-toggle">
                             <i class="fas fa-image"></i>
-                            <span>مدیریت اسلایدر ها</span>
+                            <span>مدیریت کاربران</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="./Slider-details.html">افزودن و ویرایش</a>
+                                <a href="./Slider-details.html">تائید کاربر</a>
+                            </li>
+                            <li>
+                                <a href="./Slider-details.html">ویرایش</a>
                             </li>
                             
                         </ul>
@@ -270,21 +267,21 @@
                     <li>
                         <a href="#" onClick="return false;" class="menu-toggle">
                             <i class="fas fa-user"></i>
-                            <span>مدیریت کاربران سیستم</span>
+                            <span>مدیریت سفارش ها</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="../rtldark/Admin-Managment.html">افزودن ادمین جدید</a>
+                                <a href="../rtldark/Admin-Managment.html">تاید سفارش</a>
                             </li>
                             <li>
-                                <a href="../rtldark/Admin-details.html">ویرایش سطح دسترسی ها</a>
+                                <a href="../rtldark/Admin-details.html">ویرایش</a>
                             </li>
                         </ul>
                     </li>
 
                    
 
-                    
+<!--                     
                     <li>
                         <a href="#" onClick="return false;" class="menu-toggle">
                             <i class="fas fa-envelope"></i>
@@ -330,7 +327,7 @@
                             </li>
                            
                         </ul>
-                    </li>
+                    </li> -->
 
                     <li>
                         <a href="#" onClick="return false;" class="menu-toggle">
@@ -366,18 +363,7 @@
 
             <div class="col-lg-12 col-md-12">
                 <div class="card">
-                    <div class="profile-tab-box">
-                        <div class="p-l-20">
-                            <ul class="nav ">
-                                <li class="nav-item tab-all">
-                                    <a class="nav-link active show" href="#project" data-toggle="tab">زبان فارسی</a>
-                                </li>
-                                <li class="nav-item tab-all p-l-20">
-                                    <a class="nav-link" href="#usersettings" data-toggle="tab">زبان انگلیسی</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="project" aria-expanded="true">
@@ -389,11 +375,11 @@
                                 <div class="card project_widget">
                                     <div class="header">
 
-                                        <h4>مدیریت  منو</h4><br /><br />
+                                        <h4>ویرایش سفارش</h4><br /><br />
                                         <form action="#">
                                             <div class="form-group">
 
-                                                <label for="exampleFormControlInput1">نام فارسی منو</label>
+                                                <label for="exampleFormControlInput1">نام سفارش</label>
                                                 <input type="text" class="form-control" name="Title"
                                                     id="exampleFormControlInput1"
                                                     placeholder="  نام فارسی منو خود را بنویسید">
@@ -401,16 +387,35 @@
 
                                             <div class="form-group">
 
-                                                <label for="exampleFormControlInput1">لینک صفحه</label>
+                                                <label for="exampleFormControlInput1">قیمت سفارش</label>
                                                 <input type="text" class="form-control" name="Title"
                                                     id="exampleFormControlInput1"
                                                     placeholder="لینک صفحه را وارد کنید">
                                             </div>
 
 
-
                                             <div class="form-group">
-                                                <label for="exampleFormControlSelect1">نوع مشترکین</label>
+
+                                                <label for="exampleFormControlInput1">نام مشترک</label>
+                                                <input type="text" class="form-control" name="Title"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="لینک صفحه را وارد کنید">
+                                            </div>
+
+
+                                            
+                                            <div class="form-group">
+
+                                                <label for="exampleFormControlInput1">تاریخ ثبت سفارش</label>
+                                                <input type="text" class="form-control" name="Title"
+                                                    id="exampleFormControlInput1"
+                                                    placeholder="لینک صفحه را وارد کنید">
+                                            </div>
+
+
+<!-- 
+                                            <div class="form-group">
+                                                <label for="exampleFormControlSelect1">نام مشترک</label>
                                                 <select class="form-control" id="exampleFormControlSelect1">
                                                     
                                                     <option>شخصی </option>
@@ -418,10 +423,10 @@
                                                     <option>هیچ کدام</option>
                                                     
                                                 </select>
-                                            </div>
+                                            </div> -->
 
 
-                                            <div class="form-check m-l-10">
+                                            <!-- <div class="form-check m-l-10">
                                                 <label class="form-check-label"> 
                                                     <p>وضعیت نمایش</p>
                                                     <input class="form-check-input" type="checkbox" value=""> 
@@ -429,17 +434,16 @@
                                                         <span class="check"></span>
                                                     </span>
                                                 </label>
-                                            </div>
+                                            </div> -->
                                             
 
-                                            <button class="btn btn-info btn-round">ذخیره تغییرات</button>
+                                            <button class="btn btn-info btn-round">ثبت سفارش</button>
                                             </a>
                                     </div>
 
                                 </div>
                             </div>
-                            <!-- 
-                               *******div زیر یک باکس خالی و ثابت می باشد*******      -->
+                    
 
                             <div class="col-lg-12 col-md-12 col-sm-12">
 

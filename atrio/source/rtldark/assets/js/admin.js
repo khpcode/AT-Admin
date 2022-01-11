@@ -25,6 +25,8 @@ if (typeof jQuery === "undefined") {
     throw new Error("jQuery plugins need to be before this file");
 }
 
+
+
 // declare variables
 $.MyAdmin = {};
 $.MyAdmin.options = {
@@ -365,6 +367,9 @@ function skinChanger() {
         localStorage.setItem("demo2_choose_skin_active", $this.data('theme'));
     });
 }
+
+
+
 //Full screen window
 function callFullScreen() {
     $(document).on('click', '.fullscreen-btn', function (e) {
@@ -411,6 +416,13 @@ function setSkinListHeightAndScroll(isFirstTime) {
         railBorderRadius: '0'
     });
 }
+
+
+
+
+
+
+
 
 //Setting tab content set height and show scroll
 function setSettingListHeightAndScroll(isFirstTime) {
@@ -524,6 +536,67 @@ if (localStorage.getItem("demo2_choose_logoheader_active")) {
 }
 
 
+//TestCase
+
+if (localStorage.getItem("demo2_choose_logoheader")) {
+    jQuery("body").addClass(localStorage.getItem("demo2_choose_logoheader"));
+} else {
+    jQuery("body").addClass("logo-black");
+}
+
+if(localStorage.getItem("demo2_choose_logoheader_active")) {
+    $(".right-sidebar .demo-choose-logoheader li").each(function (index) {
+        jQuery(this).removeClass("actived");
+        if(jQuery(this).attr('data-theme') == localStorage.getItem("demo_choose_logoheader_active")) {
+            jQuery(this).addClass("actived");
+        }
+    });
+}
+
+
+//TestCase2
+
+
+$(document).on('click', '.card .tools .t-collapse', function () {
+    var el = $(this).parents(".card").children(".card-body");
+    if ($(this).hasClass("fa-chervon-down")) {
+        $(this).removeClass("fa-chervon-down").addClass("fa-chervon-up");
+        el.slideUp(200);
+    } else  {
+        $(this).removeClass("fa-chervon-up").addClass('fa-chervon-down');
+        el.slideDown(200);
+    }
+});
+
+// $(document).on('click', '.card . tools .t-close', function (){
+//     var el = $(this).parents(".card").children(".card-body");
+//     if($(this).hashClass("fa-chervon-down")) {
+//         $(this).removeClass("fa-chervon-down").addClass("fa-chervon-up");
+//         el.slideUp(200);
+//     }else {
+//         $(this).removeClass("fa-chervon-up").addClass('fa-chervon-down');
+//         el.slideDown(200);
+//     }
+// })
+
+
+
+//TestCase3
+
+$(document).on('click', '.card .tools .t-collapse', function () {
+
+    var el = $(this).parents(".catalog").children(".card-body");
+    if($(this).hashClass("fa-chervon-down")) {
+        $(this).removeClass("fa-chevron-down").addClass("fa-chervon-up");
+        el.slideUp(200);
+    } else {
+        $(this).removeClass("fa-chervon-up").addClass("fa-chevron-down");
+        el.slideDown(200);
+    }
+})
+
+
+
 /************* collapse button in panel***************8*/
 $(document).on('click', '.card .tools .t-collapse', function () {
     var el = $(this).parents(".card").children(".card-body");
@@ -535,6 +608,15 @@ $(document).on('click', '.card .tools .t-collapse', function () {
         el.slideDown(200);
     }
 });
+
+//TestCase 4
+
+$('.box-refresh').on('click', function(br) {
+br.preventDefault();
+})
+
+
+
 
 /**************** close button in panel *****************/
 $(document).on('click', '.card .tools .t-close', function () {
